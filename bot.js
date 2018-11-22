@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("1help | by ╲⎝ ★ 𝟛𝓶r ★ ⎠╱ ",{type: 'Streaming'})
+   client.user.setActivity("/help | by ╲⎝ ★ 𝟛𝓶r ★ ⎠╱ ",{type: 'Playing'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "1" 
+var prefix = "/" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
